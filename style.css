@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Animal;
+    src: url(./fontes/Animal\ Kingdom.ttf);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+  
+}
+
+header{
+    text-align: center;
+    margin: 20px;
+}
+
+header h1{
+    font-family: Animal;
+    font-size: 4em;
+    text-align: center;
+    color: #a0cf82dc;
+    margin-left: 120px;
+    /* margin: 20px; */
+    /* text-shadow:
+    1px 1px 2px rgb(165, 109, 4),
+    0 0 1em #2a11e9b8,
+    0 0 0.2em #505e2b; */
+ 
+   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #cea5776f; 
+    /* background: linear-gradient(to right, #2c774465, #5a3f3781);  */
+
+
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;  /* Limita a vizualização do container */
+    position: absolute;    /* Torna possível alterar a posiçãodo container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /* Alterar a posiçao do eixo */
+    margin: 60px;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 111px;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    background-color: #ffffffde;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.bar:hover{
+
+    background-color: #ffffff63;
+   
+}
+
+input{
+  display: none;    /* Não vai dar para ver */
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+    
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+    }
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
+
+
+.rodape{
+    margin-top: 555px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cea577e1;
+    text-align: center;
+    background-color: #a0cf829f;
+}
